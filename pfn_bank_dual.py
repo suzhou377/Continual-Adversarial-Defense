@@ -2,8 +2,8 @@ import torch
 import numpy as np
 import torch.nn.functional as F
 from torch.autograd import Variable
-from cluster.kmeans import kmeans
-from utils.function import encode_onehot, calculate_prototype
+from kmeans import kmeans
+from function import encode_onehot, calculate_prototype
 def cad_loss(encoder,
              classifier,
              move_average,
